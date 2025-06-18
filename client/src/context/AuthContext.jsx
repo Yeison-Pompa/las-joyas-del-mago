@@ -26,6 +26,11 @@ export const AuthProvider = ({ children }) => {
       setRole("user");
       return true;
     }
+    if (username === "yasna" && password === "yasna1234") {
+      setIsAuthenticated(true);
+      setRole("user");
+      return true;
+    }
 
     return false;
   };
